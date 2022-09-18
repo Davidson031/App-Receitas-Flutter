@@ -50,4 +50,30 @@ class Meal {
 
   });
 
+  String get complexityText {
+
+    switch(complexity){
+      case Complexity.simple:
+        return 'Simples';
+      case Complexity.medium:
+        return 'Médio';
+      case Complexity.difficult:
+        return 'Difícil';
+      default: return 'Desconhecida';
+    }
+  }
+
+  String get costText {
+
+    switch(cost){
+      case Cost.cheap:
+        return 'Barato';
+      case Cost.fair:
+        return 'Justo';
+      case Cost.expensive:
+        return 'Caro';
+      default: return 'Desconhecido';
+    }
+  }
+
 }
