@@ -6,9 +6,8 @@ import 'screens/categories_meals_screen.dart';
 import 'utils/app-routes.dart';
 import 'package:receitas/screens/meal_detail-screen.dart';
 
- 
 void main() => runApp(MyApp());
- 
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -28,15 +27,12 @@ class MyApp extends StatelessWidget {
               ),
             ),
       ),
-
       routes: {
         AppRoutes.HOME: (contexto) => CategoriesScreen(),
         AppRoutes.CATEGORIES_MEALS: (contexto) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (contexto) => MealDetailScreen(),
       },
+    
     );
   }
 }
- 
-
- 
