@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'categories_screen.dart';
 import 'favorite_screen.dart';
 import 'package:flutter/material.dart';
+import '../components/main_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   const TabsScreen({Key? key}) : super(key: key);
@@ -30,10 +31,17 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      drawer: MainDrawer(
+        
+      ),
+
       appBar: AppBar(
         title: Text(_screens[_selectedScreenIndex]['title'] as String),
       ),
+
       body: _screens[_selectedScreenIndex]['tela'] as Widget,
+
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectScreen,
         unselectedItemColor: Colors.white,
