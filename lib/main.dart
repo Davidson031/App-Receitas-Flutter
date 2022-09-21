@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.HOME: (contexto) => TabsScreen(),
         AppRoutes.CATEGORIES_MEALS: (contexto) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (contexto) => MealDetailScreen(),
-        AppRoutes.SETTINGS: (contexto) => Settings(),
+        AppRoutes.SETTINGS: (contexto) => SettingsScreen(),
       },
     
     );
